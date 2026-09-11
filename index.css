@@ -2,7 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
+/*difference between * and html tag*/
 
 header,
 aside,
@@ -12,19 +14,89 @@ footer {
 }
 
 header {
+  color: #44b;
   nav {
+    background-color: #44b;
     display: flex;
     width: 100vw;
     justify-content: space-between;
+    padding: 0.25rem;
   }
+}
+nav li {
+  padding: 0.5rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  font-size: large;
+  cursor: pointer;
 }
 menu {
   display: flex;
   .screen-lg {
   }
 }
+.ad {
+  background-color: red;
+  padding: 1ch;
+}
 container {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2ch;
+  padding: 1rem;
+  padding-right: 1rem;
+}
+form {
+  display: flex;
+}
+input {
+  flex: 1;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #44b;
+  padding: 0.25rem 0.5rem;
+}
+aside li {
+  background-color: #44b;
+  color: white;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+  min-width: 25ch;
+  padding: 0.25rem;
+}
+.product {
+  background-color: #44b;
+}
+.product h2 {
+  padding: 1ch;
+}
+.product .description {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+}
+.product footer {
+  display: flex;
+  justify-content: space-between;
+}
+.product .price {
+  display: flex;
+  padding: 1ch;
+  gap: 1ch;
+  /* justify-content: space-between; */
 }
 body {
   display: grid;
@@ -35,6 +107,8 @@ body {
 main {
   display: grid;
   grid-column: 1 / span 1;
+  color: white;
+  padding: 1ch;
 }
 
 article {
@@ -46,6 +120,8 @@ article {
 ul {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  gap: 1ch;
+  list-style-type: none;
 }
 
 footer.page {
